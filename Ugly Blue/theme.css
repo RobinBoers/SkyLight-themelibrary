@@ -7,13 +7,15 @@
     Theme name: SkyLight Default
     Theme author: Robin Boers
     Date created: 27/01/2020
-    Last updated: 20/06/2020
+    Last updated: 06/08/2021
 */
 
-main, header, footer {
+main,
+header,
+footer {
     width: 80%;
     background-color: ghostwhite;
-    margin:auto;
+    margin: auto;
     padding: 10px;
-    padding-left:20px;
+    padding-left: 20px;
 }
