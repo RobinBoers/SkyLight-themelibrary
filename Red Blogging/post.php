@@ -47,6 +47,9 @@
                     ?>
                 </p>
             </footer>
+            <aside>
+                <?php include "../content/comments.php"; ?>
+            </aside>
         </article>
     </main>
     <footer>
