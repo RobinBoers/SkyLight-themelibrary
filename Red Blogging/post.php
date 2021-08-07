@@ -47,9 +47,10 @@
                     ?>
                 </p>
             </footer>
-            <aside>
+            <section>
+                <h3>Reacties</h3>
                 <?php include "../content/comments.php"; ?>
-            </aside>
+            </section>
         </article>
     </main>
     <footer>
