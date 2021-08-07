@@ -37,6 +37,14 @@ if(file_exists($file) && filesize($file) > 0){
         }
         
     }
+    
+    ?><hr>
+    
+        <!-- New comment button -->
+        <a href="edit/newcomment.php?post_id=<?php echo $pagename ?>">Nieuwe comment...</a>
+
+    <?php
+    
 } else {
     echo "Er ging iets fout...";
 }
