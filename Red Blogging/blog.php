@@ -18,7 +18,7 @@ if(file_exists($file) && filesize($file) > 0){
             if($fullView == true && $blog->id == $pagename) { echo ''; } else { ?>
             <article class="blogpost post">
                 <header>
-                    <h2><a style="color:darkred" href="<?= $blog->link ?>"><?= $blog->title ?></a></h2>
+                    <h2><a style="color:darkred" href="<?= $root_path.$blog->link ?>"><?= $blog->title ?></a></h2>
                     <p>Gepubliceerd door <?= $blog->auteur ?> <span><time datetime="<?= $blog->datum ?>">op <?= $blog->datum ?></time></span></p>
                 </header>
                 <div class="clearfix blogtext postcontent">

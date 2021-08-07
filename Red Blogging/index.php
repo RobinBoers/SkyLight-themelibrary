@@ -28,7 +28,7 @@
 </head>
 <body>
     <header class="paginaheader">
-        <h1><a href="/index.php"><?php echo $sitetitle; ?></a></h1>
+        <h1><a href="<?php echo $root_path ?>/index.php"><?php echo $sitetitle; ?></a></h1>
         <nav>
             <?php include "content/menu.php"; ?>
         </nav>
