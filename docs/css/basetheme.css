@@ -1,0 +1,135 @@
+/* 
+    basetheme.css - SkyLight Website Builder
+    Made by Robin Boers
+    Stylesheet from old version of SkyLight (pre-Github)
+    I'm slowly transfering stylerules to main.css
+    This stylesheet will be used for posistioning when themes engine is finished
+*/
+
+/* Background */
+body {
+    background: url("/images/background.png") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Default font, because serif is ugly */
+:root {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.2;
+}
+
+/* Color, and hoverefect for the hyperlinks */
+a {
+    font-weight: 600;
+    text-decoration: none;
+    color: royalblue;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h1 a {
+    text-decoration: none !important;
+    color: black;
+}
+
+/* Pointer cursor for buttons */
+input[type="button" i],
+input[type="submit" i],
+button,
+input[type="file" i]::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+/* Make warnings red */
+.red {
+    color: red;
+}
+
+/* Logo */
+.logo {
+    /*    float: left;*/
+    width: 100px;
+    height: auto;
+}
+
+/* Always handy */
+.clearfix {
+    overflow: auto;
+}
+
+/* Make content on blogpage look good. */
+.postcontent {
+    margin-bottom: 10px;
+}
+.postcontent p {
+    margin: 0;
+}
+
+.smalltext {
+    font-size: 9px;
+}
+
+@media all and (min-width: 1030px) {
+    /* Floats rechts en links */
+    .left {
+        float: left;
+    }
+    .center {
+        float: left;
+        text-align: center;
+    }
+    .right {
+        float: right;
+    }
+    .nav li {
+        display: inline;
+    }
+}
+
+/* Reset font-weight for headings */
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* Blink effect */
+
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; /* for android */
+    animation: 2s linear infinite condemned_blink_effect;
+}
+@-webkit-keyframes condemned_blink_effect {
+    /* for android */
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+/* End stylesheet */
